@@ -18,8 +18,8 @@ public class FoodController {
 
     @GetMapping
     public List<Food> getAll(){
-        List<Food> foodList = repository.findAll();
-        return foodList;
+        // List<Food> foodList = repository.findAll();
+        return repository.findAll(); //foodList;
     }
 
 }
